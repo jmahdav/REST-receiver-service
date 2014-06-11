@@ -1,7 +1,6 @@
 REST-receiver-service
 =====================
 
- Test the REST receiver service
  
 ;;writing test for the REST receiver service
 
@@ -20,5 +19,6 @@ when ((Authentication == off || Authentication : true),
 )
 
  ;; timeout and contributing maybe should be considered here 
+ 
  when (syntax != true || key-Attribute = empty ||  (Authentication = on  &  Authentication = empty ) ||  (Authentication = on  & Authentication : false ) ||  number-of-events > 100 )
     println ("an error has occurred")
